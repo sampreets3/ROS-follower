@@ -1,7 +1,11 @@
 # ROS-follower
 A simple ROS package where a swarm of robots follow a leader. Both the leader and the robots are visualized as cubes. Done as a part of the Software Architechture for Robotics course at Ecole Centrale de Nantes.
 
-![demo](imgs/output.gif)
+<p align="center">
+    <!--- relative path means image/image.png instead of https://etc... -->
+    <img src="img/output.gif" width="580" height="463">                           
+</a>
+
 ---
 
 ### Usage:
