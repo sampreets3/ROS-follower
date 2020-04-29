@@ -16,8 +16,8 @@ A simple ROS package where a swarm of robots follow a leader. Both the leader an
   1. Once the packages have been built, open a new terminal and source the setup file of your ROS workspace : `source ~/<your-ros-workspace>/devel/setup.bash`
   1. Run the launch file in the master_and_dog package : `roslaunch master_and_dog master_and_dog.launch` Using the Tab key to autocomplete is a good indication that everything is in order
   1. In another terminal, run `rviz` to see the visual output.
-
 If everything is well-configured, you will see a blue marker that is tracing a circular trajectory, and two red markers that are following the blue marker. The blue marker is the master, and the two red markers are the follower swarm.
+
 ---
 
 ### Planned Updates:
