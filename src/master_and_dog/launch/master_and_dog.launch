@@ -1,0 +1,26 @@
+<launch>
+
+    <!-- The ever-useful infamous capture_key node -->
+    <node pkg="capture_key" type="capture_key_node" name="ck">
+    </node>
+
+    <!-- The master -->
+    <node pkg="master_and_dog" type="master" name="charlie">
+
+    </node>
+
+    <!-- The dog -->
+    <node pkg="master_and_dog" type="dog" name="snoopy" output="screen">
+      <param name="init_x" value="5.0" type="double"/>
+      <param name="init_y" value="5.0" type="double"/>
+    </node>
+
+    <node pkg="master_and_dog" type="dog" name="spike" output="screen">
+      <remap from="pos" to="/snoopy/pos" />
+      <remap from="speed" to="/snoopy/speed" />
+
+      <param name="init_x" value="5.0" type="double"/>
+      <param name="init_y" value="-5.0" type="double"/>
+    </node>
+
+</launch>
